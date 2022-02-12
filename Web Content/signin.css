@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+h2
+{
+	text-align: center;
+}
+a
+{
+	text-decoration: none;
+	color: #1E90FF;
+}
+.acc
+{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+form
+{
+	width: 50%;
+	margin: auto;
+}
+.form
+{
+	width: 40%;
+	margin: auto;
+}
+.fp
+{
+	float: right;
+	padding: 15px 0px;
+}
+form label
+{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+input[type="submit"]
+{
+	width: 255px;
+	height: 35px;
+	border: none;
+	font-size: 14px;
+	color: white;
+	background-color:  #1E90FF;
+	border-radius: 5px;	
+}
+input[type="submit"]:hover
+{
+	cursor: pointer;
+	 
+}
+input[type="email"], input[type="password"]
+{
+	height: 30px;
+	width: 245px;
+}

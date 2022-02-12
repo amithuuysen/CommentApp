@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="forgotpass.css">
+	<title>Comment App | Forgot Password</title>
+	<script>
+		function validateForm()
+		{
+  			var email = document.forms["forgotForm"]["email"].value;
+  			var secret = document.forms["forgotForm"]["secret"].value;
+  			if (email == "" || email == null || secret == "" || secret == null)
+  			{
+    			alert("All the fields must be filled out");
+    			return false;
+  			}
+		}
+	</script>
+</head>
+<body>
+	<h2>Forgot Password</h2>
+	<div class="form">
+		<div class="acc">Don't have an account?<a href="signup.html">  Sign Up</a></div>
+		<form name="forgotForm" action="ForgotPass" method="post"  onsubmit="return validateForm()">
+			<label>Email</label>
+			<input type="email" name="email"/>
+			<label>Secret</label>
+			<input type="password" name="secret"/>
+			<input type="submit" value="Sign In"/>
+		</form>
+	</div>
+</body>
+</html>

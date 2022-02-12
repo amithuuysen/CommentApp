@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function validateForm()
+		{
+  			var email = document.forms["signupForm"]["email"].value;
+  			var password = document.forms["signupForm"]["password"].value;
+  			var secret = document.forms["signupForm"]["secret"].value;
+  			if (email == "" || email == null || password == "" || password == null || secret == "" || secret == null)
+  			{
+    			alert("All the fields must be filled out");
+    			return false;
+  			}
+		}
+	</script>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="signup.css">
+	<title>Comment App | Sign Up</title>
+</head>
+<body>
+	<h2>Sign Up</h2>
+	<div class="form">
+		<div class="acc">Already have an account?<a href="signin.html">  Sign In</a></div>
+		<form name="signupForm" action="Signup" method="post" onsubmit="return validateForm()">
+			<label>Email</label>
+			<input type="email" name="email"/>
+			<label>Password</label>
+			<input type="password" name="password"/>
+			<label>Secret</label>
+			<input type="password" name="secret"/>
+			<input type="submit" value="Sign Up"/>
+			<p>By clicking the "Sign Up" button, you are creating an account and, you agree to the Terms of Use</p>
+		</form>
+	</div>
+</body>
+</html>
