@@ -8,6 +8,17 @@ Download and Install:
 3) Installation reference video - https://www.youtube.com/watch?v=OM4aZJW_Ojs
 4) Download and Install Apache Tomcat - https://tomcat.apache.org/download-80.cgi
 
+Create DataBase:
+1) Open MySQL workbench
+2) Open MySQL instance connection -> Then enter username and password (root,1234)
+3) create database named (commentapp)
+4) create two tables to store user creadential and user's feedback
+	Query - CREATE TABLE credentials (mail varchar(255) primary key, pass varchar(255), secret varchar(10));
+	Query - CREATE TABLE comments (mail varchar(255), comments text);
+5) Insert some data into these tables and try below steps.
+6) Finally by using these creadentials tryout SIGN IN and FORGOT PASSWORD
+7) Then implement SIGN UP and submit FEEDBACK.
+
 Download Project:
 1) Download and Unzip CommentApp Project
 2) Open Eclipse IDE and File -> Open Projects from File System
@@ -27,4 +38,5 @@ Add server:
 
 Now project will be executed succesfully...
 
+Incase any problems, please reach me at (amithuuysen@gmail.com) or (7845242115)
 	
