@@ -28,6 +28,7 @@ Download Project:
 3.2) Navigate to Tomatcat 8.5 unzipped path and select servlet-api.jar file
 3.3) Again add another jar file by dowloading from this link (MYSQL Connector)
 	(https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28)
+FYI - Also added in my root repository and Zip too. (JAR Files)
 3.4)scroll down and click on JAR file it will be dowloaded 2.8MB
 Add server:
 1) Click on File -> New -> Other -> Server -> Server -> click next -> 
